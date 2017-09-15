@@ -31,5 +31,5 @@ fun Shop.countCustomersFrom(city: City): Int {
 
 fun Shop.findAnyCustomerFrom(city: City): Customer? {
     // Return a customer who lives in the given city, or null if there is none
-    return this.customers.firstOrNull() { it.isFrom(city) }
+    return this.customers.firstOrNull { it.isFrom(city) }
 }
